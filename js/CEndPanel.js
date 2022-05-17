@@ -54,13 +54,13 @@ function CEndPanel(){
                     
 
 
-        _oBestText = new CTLText(_oContainerPanel, 
-                    oSpriteBg.width/2-250, oSpriteBg.height/2-70, 500, 50, 
-                    50, "center", "#fff", FONT, 1,
-                    0, 0,
-                    TEXT_BEST_SCORE,
-                    true, true, false,
-                    false );
+        // _oBestText = new CTLText(_oContainerPanel, 
+        //             oSpriteBg.width/2-250, oSpriteBg.height/2-70, 500, 50, 
+        //             50, "center", "#fff", FONT, 1,
+        //             0, 0,
+        //             TEXT_BEST_SCORE,
+        //             true, true, false,
+        //             false );
                     
 
         
@@ -105,7 +105,7 @@ function CEndPanel(){
         playSound("time_over",1,false);
 
         _oTotScoreText.refreshText(TEXT_SCORE+": "+iTotScore);
-        _oBestText.refreshText(TEXT_BEST_SCORE+": "+s_iBestScore);
+        //_oBestText.refreshText(TEXT_BEST_SCORE+": "+s_iBestScore);
         
         _oBg.alpha = 0;
         _oFade.alpha=0;

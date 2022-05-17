@@ -123,7 +123,7 @@ function CMain(oData){
         for(var cont=0;cont<2;cont++){
             for(var j=0;j<4;j++){
                 for(var i=0;i<=28;i++){
-                    s_oSpriteLibrary.addSprite(szCharacter+"_"+MATERIALS[j]+"_"+i,"./sprites/character_"+szCharacter+"/"+MATERIALS[j]+"/"+szCharacter+"_"+MATERIALS[j]+"_"+i+".png");
+                    s_oSpriteLibrary.addSprite(szCharacter+"_"+MATERIALS[j]+"_"+i,"./sprites/character_"+szCharacter+"/"+MATERIALS[j]+"/"+szCharacter+"_"+MATERIALS[j]+".png");
                 }
             }
             szCharacter = "male";
@@ -131,7 +131,7 @@ function CMain(oData){
         //----------------------
         //-----COMPACTOR--------
         for(var i=0;i<=33;i++){
-            s_oSpriteLibrary.addSprite("compactor_bottom_"+i,"./sprites/compactor_bottom/compactor_bottom_"+i+".png");
+            s_oSpriteLibrary.addSprite("compactor_bottom_"+i,"./sprites/compactor_bottom/compactor_top_0_"+i+".png");
             s_oSpriteLibrary.addSprite("compactor_top_"+i,"./sprites/compactor_top/compactor_top_0_"+i+".png");
         }
         //----------------------
@@ -321,7 +321,7 @@ function CMain(oData){
     ITEM_POINTS = oData.item_point;
     MALUS_POINTS = oData.malus_point;
     ENABLE_FULLSCREEN = oData.fullscreen;
-    CHANGE_DELAY = TIME_LEVEL/4;
+    CHANGE_DELAY = TIME_LEVEL;
     s_bAudioActive = oData.audio_enable_on_startup;
 
 

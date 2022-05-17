@@ -59,7 +59,7 @@ function CItem(iX,iY,iFallAtX,szMaterial,iItemType,bIndicate,oParentContainer){
         _oContainer.regX = _iWidth/2;
 
         _oHand = {x:0};
-        if(_bIndicate){
+        /*if(_bIndicate){
             var oSprite = s_oSpriteLibrary.getSprite("hand_indicate");
             _oHand = createBitmap(oSprite);
             _oParentContainer.addChild(_oHand);
@@ -69,7 +69,7 @@ function CItem(iX,iY,iFallAtX,szMaterial,iItemType,bIndicate,oParentContainer){
 
             createjs.Tween.get(_oHand, {loop:-1,bounce:true})
             .to({y:_oContainer.y}, 300, createjs.Ease.cubicOut);
-        }
+        }*/
 
         _bUpdate = true;
     };

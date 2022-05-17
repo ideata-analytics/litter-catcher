@@ -16,7 +16,7 @@ function CCreditsPanel(){
         _oFade.on("mousedown",function(){});
         s_oStage.addChild(_oFade);
         
-        createjs.Tween.get(_oFade).to({alpha:0.7},500);
+        createjs.Tween.get(_oFade).to({alpha:0.2},500);
         
         _oPanelContainer = new createjs.Container();   
         s_oStage.addChild(_oPanelContainer);
@@ -37,20 +37,20 @@ function CCreditsPanel(){
         oTitle.y = -70;
         oTitle.textAlign = "center";
         oTitle.textBaseline = "alphabetic";
-        _oPanelContainer.addChild(oTitle);
+        //_oPanelContainer.addChild(oTitle);
 
-        var oLink = new createjs.Text("www.codethislab.com"," 56px "+FONT, "#fff");
+        var oLink = new createjs.Text("Saving Our Blue, Malta"," 56px "+FONT, "#fff");
         oLink.y = 106;
         oLink.textAlign = "center";
         oLink.textBaseline = "middle";
-        oLink.lineWidth = 320;
+        oLink.lineWidth = 520;
         _oPanelContainer.addChild(oLink);
         
         var oSprite = s_oSpriteLibrary.getSprite('ctl_logo');
         _oLogo = createBitmap(oSprite);
         
         _oLogo.regX = oSprite.width/2;
-        _oLogo.regY = oSprite.height/2;
+        _oLogo.regY = oSprite.height;
         _oLogo.y = 0;
         _oPanelContainer.addChild(_oLogo);
       
@@ -73,7 +73,7 @@ function CCreditsPanel(){
     };
     
     this._onLogoButRelease = function(){
-        window.open("http://www.codethislab.com/index.php?&l=en");
+        window.open("https://savingourblue.gov.mt/");
     };
     
     this._init();

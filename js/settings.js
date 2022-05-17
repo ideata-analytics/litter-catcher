@@ -4,7 +4,7 @@ var CANVAS_HEIGHT = 1920;
 var EDGEBOARD_X = 0;
 var EDGEBOARD_Y = 0;
 
-var FONT = "comiquita_sansmedium";
+var FONT = "geomanistitalic";
 
 
 var FPS      = 30;
@@ -43,7 +43,7 @@ var ANIM_IDLE = "idle";
 var ANIM_WALK = "walk";
 var ANIM_CATCH = "catch";
 
-var PREFIX_LOCAL_STORAGE = "twin_the_bin";
+var PREFIX_LOCAL_STORAGE = "litter_catcher";
 var ENABLE_FULLSCREEN;
 
 // KEY CODES

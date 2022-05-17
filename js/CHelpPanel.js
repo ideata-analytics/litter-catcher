@@ -40,7 +40,7 @@ function CHelpPanel(szMaterialToCollect, aMalus, bMale){
         _oContainerPanel.addChild(oBg);
 
         _oTextCollect = new CTLText(_oContainerPanel, 
-            oSpriteBg.width/2-(oSpriteBg.width-150)/2, 50, oSpriteBg.width-150, 100, 
+            oSpriteBg.width/2-(oSpriteBg.width-150)/2, 50, oSpriteBg.width-150, 400, 
             70, "center", "#fff", FONT, 1,
             0, 0,
             TEXT_HELP_PANEL_COLLECT+" "+TEXT_MATERIALS[szMaterialToCollect],
@@ -51,12 +51,12 @@ function CHelpPanel(szMaterialToCollect, aMalus, bMale){
         var oSprite = s_oSpriteLibrary.getSprite(szMaterialToCollect);
         _oItemToCollect = createBitmap(oSprite);
         _oItemToCollect.x = 310;
-        _oItemToCollect.y = oSpriteBg.height/2-oSprite.height-50;
+        _oItemToCollect.y = oSpriteBg.height/2;//-oSprite.height-50;
         _oContainerPanel.addChild(_oItemToCollect);
 
         var oCollectBitmap = createBitmap(s_oSpriteLibrary.getSprite("collect"));
         oCollectBitmap.x = 550;
-        oCollectBitmap.y = oSpriteBg.height/2-oSprite.height-50;
+        oCollectBitmap.y = oSpriteBg.height/2;//-oSprite.height-50;
         _oContainerPanel.addChild(oCollectBitmap);
 
         var iX = 310;
@@ -65,7 +65,7 @@ function CHelpPanel(szMaterialToCollect, aMalus, bMale){
             var oItem = createBitmap(oSprite);
             oItem.x = iX;
             oItem.y = oSpriteBg.height/2-oSprite.height+130;
-            _oContainerPanel.addChild(oItem);
+            //_oContainerPanel.addChild(oItem);
             _aMalusMaterials.push(oItem);
             
             iX -= 125;
@@ -74,7 +74,7 @@ function CHelpPanel(szMaterialToCollect, aMalus, bMale){
         var oAvoidBitmap = createBitmap(s_oSpriteLibrary.getSprite("avoid"));
         oAvoidBitmap.x = 550;
         oAvoidBitmap.y = oSpriteBg.height/2-oSprite.height+130;
-        _oContainerPanel.addChild(oAvoidBitmap);
+        //_oContainerPanel.addChild(oAvoidBitmap);
         
         if(s_bMobile){
             var oSpriteKeys = s_oSpriteLibrary.getSprite("but_left");
@@ -84,7 +84,7 @@ function CHelpPanel(szMaterialToCollect, aMalus, bMale){
             _oKeyLeft.x = oSpriteBg.width/2-300;
             _oKeyLeft.y = oSpriteBg.height-180;
             _oKeyLeft.scale = 0.65;
-            _oContainerPanel.addChild(_oKeyLeft);
+            //_oContainerPanel.addChild(_oKeyLeft);
 
             var oSpriteKeys = s_oSpriteLibrary.getSprite("but_right");
             _oKeyRight = createBitmap(oSpriteKeys);
@@ -93,7 +93,7 @@ function CHelpPanel(szMaterialToCollect, aMalus, bMale){
             _oKeyRight.x = oSpriteBg.width/2+300;
             _oKeyRight.y = oSpriteBg.height-180;
             _oKeyRight.scale = 0.65;
-            _oContainerPanel.addChild(_oKeyRight);
+            //_oContainerPanel.addChild(_oKeyRight);
     	}else{
 
             var oSpriteKeys = s_oSpriteLibrary.getSprite("keyboard_left");
@@ -102,7 +102,7 @@ function CHelpPanel(szMaterialToCollect, aMalus, bMale){
             _oKeyLeft.regY = oSpriteKeys.height/2;
             _oKeyLeft.x = oSpriteBg.width/2-300;
             _oKeyLeft.y = oSpriteBg.height-180;
-            _oContainerPanel.addChild(_oKeyLeft);
+            //_oContainerPanel.addChild(_oKeyLeft);
 
             var oSpriteKeys = s_oSpriteLibrary.getSprite("keyboard_right");
             _oKeyRight = createBitmap(oSpriteKeys);
@@ -110,7 +110,7 @@ function CHelpPanel(szMaterialToCollect, aMalus, bMale){
             _oKeyRight.regY = oSpriteKeys.height/2;
             _oKeyRight.x = oSpriteBg.width/2+300;
             _oKeyRight.y = oSpriteBg.height-180;
-            _oContainerPanel.addChild(_oKeyRight);
+            //_oContainerPanel.addChild(_oKeyRight);
     	}
 
         var szCharacter = bMale?"male":"female";
@@ -137,7 +137,7 @@ function CHelpPanel(szMaterialToCollect, aMalus, bMale){
         _oMiniHero.scale = 0.4;
         _oMiniHero.x = oSpriteBg.width/2-150;
         _oMiniHero.y = oSpriteBg.height-180;
-        _oContainerPanel.addChild(_oMiniHero);
+        //_oContainerPanel.addChild(_oMiniHero);
         this._addHelpMoveTween();
 
         _oButStart = new CGfxButton(oSpriteBg.width/2, oSpriteBg.height-10,s_oSpriteLibrary.getSprite("but_next"),_oContainerPanel);

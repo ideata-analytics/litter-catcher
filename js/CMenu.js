@@ -64,7 +64,7 @@ function CMenu(){
         .to({scale: 1}, 1000, createjs.Ease.elasticOut);
 
         
-        var oBestScoreText = new createjs.Text(""," 60px "+FONT, "#fff");
+        var oBestScoreText = new createjs.Text(""," 60px "+FONT, "#3E8D47");
         oBestScoreText.x = CANVAS_WIDTH/2;
         oBestScoreText.y = CANVAS_HEIGHT/2 +520;
         oBestScoreText.textAlign = "center";
@@ -83,7 +83,8 @@ function CMenu(){
         }
         
         
-        oBestScoreText.text = TEXT_BEST_SCORE + ": " + s_iBestScore;
+        //oBestScoreText.text = TEXT_BEST_SCORE + ": " + s_iBestScore;
+        oBestScoreText.text = "Did you know that turtles often mistake plastic bags as jellyfish?";
         
         var oFade = new createjs.Shape();
         oFade.graphics.beginFill("black").drawRect(0,0,CANVAS_WIDTH,CANVAS_HEIGHT);

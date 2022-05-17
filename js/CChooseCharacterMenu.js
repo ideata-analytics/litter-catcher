@@ -76,21 +76,21 @@ function CChooseCharacterMenu(){
             iX, iY, iWidth, iHeight, 
             100, "center", "#fff", FONT, 1,
             0, 0,
-            TEXT_SELECT_CHARACTER,
+            TEXT_ENTER_NICKNAME,
             true, true, false,
             false 
         );
         
-        var iButY = (iPanelHeight)/2+50;
-        var iButX = (iPanelWidth)/4;
-        var oSprite = s_oSpriteLibrary.getSprite("but_male");
+        var iButY = (iPanelHeight)/2+270;
+        var iButX = (iPanelWidth)/2;
+        var oSprite = s_oSpriteLibrary.getSprite("but_next");
         _oButMale = new CGfxButton(iButX, iButY, oSprite, _oPanelContainer);
         _oButMale.addEventListenerWithParams(ON_MOUSE_UP, this._onChooseCharacter, s_oChooseCharacterMenu, true);
 
         iButX = iPanelWidth - (iPanelWidth/4);
         var oSprite = s_oSpriteLibrary.getSprite("but_female");
-        _oButFemale = new CGfxButton(iButX, iButY, oSprite, _oPanelContainer);
-        _oButFemale.addEventListenerWithParams(ON_MOUSE_UP, this._onChooseCharacter, s_oChooseCharacterMenu, false);
+        //_oButFemale = new CGfxButton(iButX, iButY, oSprite, _oPanelContainer);
+        //_oButFemale.addEventListenerWithParams(ON_MOUSE_UP, this._onChooseCharacter, s_oChooseCharacterMenu, false);
         
         _oPanelContainer.regX = iPanelWidth/2;
         _oPanelContainer.regY = iPanelHeight/2;
@@ -108,7 +108,7 @@ function CChooseCharacterMenu(){
         _bUpdate = false;
         _oExitBut.unload();
         _oButMale.unload();
-        _oButFemale.unload();
+        //_oButFemale.unload();
 
         if(DISABLE_SOUND_MOBILE === false || s_bMobile === false){
             _oAudioToggle.unload();

@@ -96,8 +96,8 @@ function CInterface(){
         _oContainerScore.addChild(oBgScore);
         
         _oTextScore = new CTLText(_oContainerScore, 
-                    100, 24, 200, 54, 
-                    54, "left", "#fff", FONT, 1,
+                    100, 12, 200, 54, 
+                    44, "center", "#fff", FONT, 1,
                     0, 0,
                     "0",
                     true, true, false,
@@ -106,29 +106,29 @@ function CInterface(){
         
         
         //BEST SCORE CONTAINER
-        _pStartPosBestScore = {x:10,y:oSpriteBg.height+10};
-        _oContainerBestScore = new createjs.Container();
-        _oContainerBestScore.x = _pStartPosBestScore.x;
-        _oContainerBestScore.y = _pStartPosBestScore.y;
-        s_oStage.addChild(_oContainerBestScore);
+        // _pStartPosBestScore = {x:10,y:oSpriteBg.height+10};
+        // _oContainerBestScore = new createjs.Container();
+        // _oContainerBestScore.x = _pStartPosBestScore.x;
+        // _oContainerBestScore.y = _pStartPosBestScore.y;
+        // s_oStage.addChild(_oContainerBestScore);
         
-        var oSpriteBg = s_oSpriteLibrary.getSprite("best_score_panel");
-        var oBgScore = createBitmap(oSpriteBg);
-        _oContainerBestScore.addChild(oBgScore);
+        // var oSpriteBg = s_oSpriteLibrary.getSprite("best_score_panel");
+        // var oBgScore = createBitmap(oSpriteBg);
+        // _oContainerBestScore.addChild(oBgScore);
         
-        _oTextBestScore = new CTLText(_oContainerBestScore, 
-                    100, 24, 200, 54, 
-                    54, "left", "#fff", FONT, 1,
-                    0, 0,
-                    s_iBestScore.toString(),
-                    true, true, false,
-                    false 
-        );
+        // _oTextBestScore = new CTLText(_oContainerBestScore, 
+        //             100, 24, 200, 54, 
+        //             54, "center", "#fff", FONT, 1,
+        //             0, 0,
+        //             s_iBestScore.toString(),
+        //             true, true, false,
+        //             false 
+        // );
         
         
         
         //TIME CONTAINER
-        _pStartPosTime = {x:10,y:_oContainerBestScore.y + oSpriteBg.height};
+        _pStartPosTime = {x:10,y:oSpriteBg.height+10};
         _oContainerTime = new createjs.Container();
         _oContainerTime.x = _pStartPosTime.x;
         _oContainerTime.y = _pStartPosTime.y;
@@ -139,7 +139,7 @@ function CInterface(){
         
         _oTextTime = new CTLText(_oContainerTime, 
                     100, 19, 200, 64, 
-                    64, "center", "#fff", FONT, 1,
+                    44, "center", "#fff", FONT, 1,
                     0, 0,
                     formatTime(TIME_LEVEL),
                     true, true, false,
@@ -243,11 +243,11 @@ function CInterface(){
         _oContainerScore.x = _pStartPosScore.x + s_iOffsetX;
         _oContainerScore.y = _pStartPosScore.y + s_iOffsetY;
 
-        _oContainerBestScore.x = _pStartPosBestScore.x + s_iOffsetX;
-        _oContainerBestScore.y = _pStartPosBestScore.y + s_iOffsetY;
+        //_oContainerBestScore.x = _pStartPosBestScore.x + s_iOffsetX;
+        //_oContainerBestScore.y = _pStartPosBestScore.y + s_iOffsetY;
 
         if(s_bLandscape){
-            _pStartPosTime = {x:10,y:_oContainerBestScore.y + _oContainerBestScore.getBounds().height - s_iOffsetY};
+            _pStartPosTime = {x:10,y:_oContainerScore.y + _oContainerScore.getBounds().height - s_iOffsetY};
         }else{
             _pStartPosTime = {x:_oContainerScore.getBounds().width + 20,y:_oContainerScore.y};
         }
@@ -276,7 +276,7 @@ function CInterface(){
     };
     
     this.refreshBestScore = function(){
-        _oTextBestScore.refreshText(s_iBestScore);
+        //_oTextBestScore.refreshText(s_iBestScore);
     };
     
     this.onPause = function(){

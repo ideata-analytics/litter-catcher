@@ -102,7 +102,7 @@ function CGame(bMale){
         _iNumChangeCollect = Math.floor(TIME_LEVEL/CHANGE_DELAY)-1;
         _aItemsToRemove = new Array();
         _aMalusMaterials = new Array();
-        _aMaterialsShuffled = shuffle(MATERIALS.slice());
+        _aMaterialsShuffled = shuffle(MATERIALS.slice(1,2));
 
         if(bRestart){
             this._changeMaterialToCollect();
@@ -211,16 +211,16 @@ function CGame(bMale){
 
         var oSprite = s_oSpriteLibrary.getSprite("alert");
         var oAlertBitmap = createBitmap(oSprite);
-        _oContainerAlert.addChild(oAlertBitmap);
+        //_oContainerAlert.addChild(oAlertBitmap);
           
         var iWidth = oSprite.width+120;
         var iHeight = 120;
         var iX = (iWidth-oSprite.width)/-2;
-        var iY = oSprite.height+5;
-        var iTxtSize = 80;
+        var iY = oSprite.height-195;
+        var iTxtSize = 450;
         var oTextAlert = new CTLText(_oContainerAlert, 
             iX, iY, iWidth, iHeight, 
-            iTxtSize, "center", "#fff", FONT, 1,
+            iTxtSize, "center", "#57A3B3", FONT, 1,
             0, 0,
             TEXT_ALERT_CHANGE_MATERIAL,
             true, true, true,
@@ -296,6 +296,7 @@ function CGame(bMale){
         }
         
         var iRandItemType = Math.floor(Math.random() * NUM_ITEM_TYPES_PER_MATERIAL);
+
         
         var iRandFallAtX;
         var bIndicate = false;
