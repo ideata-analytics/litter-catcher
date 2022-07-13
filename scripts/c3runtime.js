@@ -4177,6 +4177,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Exps.loopindex,
 		C3.Plugins.Text.Acts.AppendText,
 		C3.Plugins.System.Acts.ResetGlobals,
+		C3.Plugins.System.Acts.SetGroupActive,
 		C3.Plugins.Touch.Cnds.IsTouchingObject,
 		C3.Plugins.System.Cnds.CompareVar,
 		C3.Plugins.TextBox.Acts.SetCSSStyle,
@@ -4204,7 +4205,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Acts.Destroy,
 		C3.Plugins.System.Acts.RestartLayout,
 		C3.Plugins.Function.Cnds.OnFunction,
-		C3.Plugins.System.Acts.SetGroupActive,
 		C3.Plugins.Sprite.Acts.SetPosToObject,
 		C3.Behaviors.Pin.Acts.PinByProperties,
 		C3.Plugins.Text.Acts.SetFontSize,
@@ -4215,8 +4215,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite.Cnds.IsBoolInstanceVarSet,
 		C3.Plugins.Sprite.Cnds.IsOnScreen,
 		C3.Plugins.Spritefont2.Cnds.CompareInstanceVar,
-		C3.Plugins.Touch.Cnds.IsInTouch,
-		C3.Plugins.Touch.Exps.X,
 		C3.Plugins.System.Acts.CreateObject,
 		C3.Plugins.Audio.Cnds.IsSilent,
 		C3.Plugins.Sprite.Cnds.CompareY,
@@ -4556,6 +4554,7 @@ self.C3_ExpressionFuncs = [
 			return () => and(and(and(n0.ExpObject(f1(), 1), ": "), n2.ExpObject(f3(), 0)), "\n");
 		},
 		() => 0.55,
+		() => "Game",
 		() => "font-size",
 		() => "50px",
 		() => "border-radius",
@@ -4570,7 +4569,6 @@ self.C3_ExpressionFuncs = [
 			const n1 = p._GetNode(1);
 			return () => f0(n1.ExpObject());
 		},
-		() => "Game",
 		() => 50,
 		() => -512132756841471,
 		() => 20,
@@ -4668,14 +4666,6 @@ self.C3_ExpressionFuncs = [
 			const v0 = p._GetNode(0).GetVar();
 			const v1 = p._GetNode(1).GetVar();
 			return () => and(and(v0.GetValue(), "/"), v1.GetValue());
-		},
-		p => {
-			const f0 = p._GetNode(0).GetBoundMethod();
-			return () => (f0() + 154);
-		},
-		p => {
-			const f0 = p._GetNode(0).GetBoundMethod();
-			return () => (f0() + 224);
 		},
 		() => 10,
 		() => 149,
