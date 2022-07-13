@@ -4190,7 +4190,6 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Browser.Acts.ConsoleLog,
 		C3.Plugins.Text.Acts.SetFontColor,
 		C3.Plugins.System.Acts.AddVar,
-		C3.Plugins.Function.Cnds.OnFunction,
 		C3.Plugins.System.Cnds.PickByComparison,
 		C3.Plugins.System.Cnds.IsGroupActive,
 		C3.Plugins.Audio.Cnds.IsTagPlaying,
@@ -4203,6 +4202,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.TiledBg.Acts.Destroy,
 		C3.Plugins.Sprite.Acts.Destroy,
 		C3.Plugins.System.Acts.RestartLayout,
+		C3.Plugins.Function.Cnds.OnFunction,
 		C3.Plugins.System.Acts.SetGroupActive,
 		C3.Plugins.System.Acts.ResetGlobals,
 		C3.Plugins.Sprite.Acts.SetPosToObject,
@@ -4358,6 +4358,8 @@ self.C3_JsPropNameTable = [
 	{QuizOkButton: 0},
 	{QuizOkText: 0},
 	{seashellbullet: 0},
+	{QuizBonusPoints: 0},
+	{TotalScore: 0},
 	{Buttons: 0},
 	{triviaOptions: 0},
 	{currentLevel: 0},
@@ -4370,6 +4372,7 @@ self.C3_JsPropNameTable = [
 	{MaxBomb: 0},
 	{MaxMiss: 0},
 	{CollectedItems: 0},
+	{quizBonusPoints: 0},
 	{quizQuestionID: 0},
 	{RightAnswerFromJSON: 0},
 	{LastLevel: 0},
@@ -4608,17 +4611,32 @@ self.C3_ExpressionFuncs = [
 			const v0 = p._GetNode(0).GetVar();
 			return () => and("Right answer is: ", v0.GetValue());
 		},
-		() => "SetRightAnswer",
 		p => {
 			const n0 = p._GetNode(0);
 			return () => and("option button:", n0.ExpInstVar());
+		},
+		() => -287007565677567,
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => and("Total Items Collected: ", v0.GetValue());
+		},
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => and("Total Items Missed: ", v0.GetValue());
+		},
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => and("Quiz Bonus Points: ", v0.GetValue());
+		},
+		p => {
+			const v0 = p._GetNode(0).GetVar();
+			return () => and("Total Score: ", v0.GetValue());
 		},
 		() => "Going to level 2",
 		() => "Going to level 3",
 		() => "Going to level 4",
 		() => 4,
 		() => "Going to level 5",
-		() => -287007565677567,
 		() => 0.1,
 		() => -20,
 		() => "Sound",
@@ -4659,6 +4677,7 @@ self.C3_ExpressionFuncs = [
 			const f0 = p._GetNode(0).GetBoundMethod();
 			return () => (f0() + 224);
 		},
+		() => 10,
 		() => 149,
 		() => 367,
 		() => 507,
@@ -4780,7 +4799,6 @@ self.C3_ExpressionFuncs = [
 			const n0 = p._GetNode(0);
 			return () => (n0.ExpObject() + 10);
 		},
-		() => 10,
 		p => {
 			const n0 = p._GetNode(0);
 			return () => and("question json: ", n0.ExpObject("Questions.1.Question"));
