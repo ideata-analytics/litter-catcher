@@ -1,26 +1,284 @@
 {
-	"Questions": [{
-		"ID": "1",
-		"Question": "How much waste was collected from the Saving Our Blue beach and dive cleanups in 2021?",
-		"Option1": "3.7 Tonnes",
-		"Option2": "10.3 Tonnes",
-		"Option3": "14.9 Tonnes",
-		"RightAnswer": "3"
-	},
-	{
-	"ID": "2",
-		"Question": "Which of the following items contain plastic?",
-		"Option1": "Cigarette Butts",
-		"Option2": "Cotton Bag",
-		"Option3": "Bamboo Cotton Buds",
-		"RightAnswer": "1"
-		},
-	{
-	"ID": "3",
-		"Question": "What makes a successful MPA?",
-		"Option1": "Proper enforcement",
-		"Option2": "Not engaging the public",
-		"Option3": "Allow illegal fishing to occur",
-		"RightAnswer": "1"
-		}]
+    "Questions": [
+        {
+            "ID": "1",
+            "Question": "How much waste was collected from the Saving Our Blue beach and dive cleanups in 2021?",
+            "Option1": "3.7 tonnes",
+            "Option2": "10.3 tonnes",
+            "Option3": "14.9 tonnes ",
+            "RightAnswer": "3"
+        },
+        {
+            "ID": "2",
+            "Question": "Which of the following item contain plastic",
+            "Option1": "Cigarette butts ",
+            "Option2": "Cotton Bag",
+            "Option3": "Bamboo Cotton Buds ",
+            "RightAnswer": "1"
+        },
+        {
+            "ID": "3",
+            "Question": "What is the  slogan for Saving Our Blue?",
+            "Option1": "Be part of the prevention not the littering!",
+            "Option2": "Say no to single use plastics!",
+            "Option3": "Be part of the solution not the pollution!",
+            "RightAnswer": "3"
+        },
+        {
+            "ID": "4",
+            "Question": "What are Marine protected areas ? ",
+            "Option1": "Designated areas to protect marine biodiversity",
+            "Option2": "Designated areas to protect ports ",
+            "Option3": "Designated areas to Yacht marinas",
+            "RightAnswer": "1"
+        },
+        {
+            "ID": "5",
+            "Question": "Is fishing allowed in Marine Protected Areas ? ",
+            "Option1": "Yes, it is allowed.",
+            "Option2": "Not allowed.",
+            "Option3": "Yes, but only in a sustainable manner",
+            "RightAnswer": "3"
+        },
+        {
+            "ID": "6",
+            "Question": "Which is the competent authority on Marine Protected Areas in Malta ? ",
+            "Option1": "Environment and Resources Authority",
+            "Option2": "Malta Tourism Authority",
+            "Option3": "Infrastructure Malta ? ",
+            "RightAnswer": "1"
+        },
+        {
+            "ID": "7",
+            "Question": "What makes a successful MPA? ",
+            "Option1": "Proper Enforcement? ",
+            "Option2": "Not engaging the public? ",
+            "Option3": "Allow illegal fishing to occur? ",
+            "RightAnswer": "1"
+        },
+        {
+            "ID": "8",
+            "Question": "How many marine protected do we have in the Maltese Islands? ",
+            "Option1": "26",
+            "Option2": "20",
+            "Option3": "18",
+            "RightAnswer": "3"
+        },
+        {
+            "ID": "9",
+            "Question": "What is the size of our Marine protected areas? ",
+            "Option1": "400 Km squared ",
+            "Option2": "4100 Km squared",
+            "Option3": "10,000 Km squared ",
+            "RightAnswer": "2"
+        },
+        {
+            "ID": "10",
+            "Question": "Which species should not be present in Marine Protected Areas ? ",
+            "Option1": "Posidonia oceanica",
+            "Option2": "Lionfish",
+            "Option3": "Bottlenose dolphin",
+            "RightAnswer": "2"
+        },
+        {
+            "ID": "11",
+            "Question": "Single-Use Plastics:",
+            "Option1": "Do not have an impact on land environment ",
+            "Option2": "Have a minimal impact on the costal environment",
+            "Option3": "Impact heavily the marine environment",
+            "RightAnswer": "3"
+        },
+        {
+            "ID": "12",
+            "Question": "Which of the following is considered a Single-Use Plastic item:",
+            "Option1": "Metal Straw",
+            "Option2": "Plastic Straw",
+            "Option3": "Bamboo Straw",
+            "RightAnswer": "2"
+        },
+        {
+            "ID": "13",
+            "Question": "Which of the following is considered an alternative to Single-Use Plastic bags:",
+            "Option1": "Cotton Bag",
+            "Option2": "Thin Plastic bag",
+            "Option3": "Plastic Bag without handles",
+            "RightAnswer": "1"
+        },
+        {
+            "ID": "14",
+            "Question": "One of the most littered SUP items found on beaches globally are __________",
+            "Option1": "Plastic Cutlery",
+            "Option2": "Cigarette butts",
+            "Option3": "Cotton Buds",
+            "RightAnswer": "2"
+        },
+        {
+            "ID": "15",
+            "Question": "If our plastic consumption habits don’t change, by 2050 there will be more plastic in the oceans than there are  ",
+            "Option1": "Vessels",
+            "Option2": "Fish",
+            "Option3": "Divers",
+            "RightAnswer": "2"
+        },
+        {
+            "ID": "16",
+            "Question": "A garbage truck equivalent of plastic waste is dumped in the ocean every",
+            "Option1": "Hour",
+            "Option2": "Day",
+            "Option3": "Minute",
+            "RightAnswer": "3"
+        },
+        {
+            "ID": "17",
+            "Question": "Per year million tonnes of plastic end up in the world’s oceans.",
+            "Option1": "8",
+            "Option2": "4",
+            "Option3": "2",
+            "RightAnswer": "1"
+        },
+        {
+            "ID": "18",
+            "Question": "It is estimated that marine mammals are killed yearly by plastic pollution.",
+            "Option1": "10 thousand",
+            "Option2": "50 thousand",
+            "Option3": "100 thousand",
+            "RightAnswer": "3"
+        },
+        {
+            "ID": "19",
+            "Question": "The ban on the distribution and sale of certain SUPs in Malta was introduced in:",
+            "Option1": "2022",
+            "Option2": "2021",
+            "Option3": "2019",
+            "RightAnswer": "1"
+        },
+        {
+            "ID": "20",
+            "Question": "The following is amongst the items included in the list of prohibited SUPs for distribution and sale:",
+            "Option1": "Plastic furniture",
+            "Option2": "Plastic toys",
+            "Option3": "Plastic plates",
+            "RightAnswer": "3"
+        },
+        {
+            "ID": "21",
+            "Question": "The following is prohibited under the SUP distribution and sale ban:",
+            "Option1": "Plastic film",
+            "Option2": "Polystyrene cups",
+            "Option3": "Plastic traffic cones",
+            "RightAnswer": "2"
+        },
+        {
+            "ID": "22",
+            "Question": "The following is prohibited under the SUP distribution and sale ban:",
+            "Option1": "Trash bags",
+            "Option2": "Trash bags",
+            "Option3": "Plastic Cotton Buds",
+            "RightAnswer": "2"
+        },
+        {
+            "ID": "23",
+            "Question": "The following is prohibited under the SUP distribution and sale ban:",
+            "Option1": "Takeaway food container made of Polystyrene",
+            "Option2": "Takeaway food container made of Polystyrene",
+            "Option3": "Carton Containers with plastic lid",
+            "RightAnswer": "1"
+        },
+        {
+            "ID": "24",
+            "Question": "The importation ban of certain Single Use Plastics in Malta was introduced on ",
+            "Option1": "The 1st of January 2021",
+            "Option2": "the 1st of February 2021",
+            "Option3": "the 1st of March 2021",
+            "RightAnswer": "1"
+        },
+        {
+            "ID": "25",
+            "Question": "_______________   were one of the items included in the import and distribution ban.                      ",
+            "Option1": "Plastic hair sticks",
+            "Option2": "Plastic lollypop sticks",
+            "Option3": "Plastic balloon sticks",
+            "RightAnswer": "3"
+        },
+        {
+            "ID": "26",
+            "Question": "Bagasse is _____________ alternative material instead of takeaway food polystyrene containers.",
+            "Option1": "a sustainable",
+            "Option2": "an unsustainable",
+            "Option3": "not an alternative ",
+            "RightAnswer": "1"
+        },
+        {
+            "ID": "27",
+            "Question": "Plastic cutlery__________________ the environment.",
+            "Option1": "does not affect",
+            "Option2": "has a minimal impact on",
+            "Option3": "is harmful to",
+            "RightAnswer": "3"
+        },
+        {
+            "ID": "28",
+            "Question": "Which period does Malta’s Single-Use Plastics Strategy ‘Rethink Plastic’ cover? ",
+            "Option1": "2021-2030",
+            "Option2": "2021-2025",
+            "Option3": "2021-2050",
+            "RightAnswer": "1"
+        },
+        {
+            "ID": "29",
+            "Question": "How many measures does Malta’s SUP Strategy ‘Rethink Plastic’ have?",
+            "Option1": "10",
+            "Option2": "24",
+            "Option3": "80",
+            "RightAnswer": "2"
+        },
+        {
+            "ID": "30",
+            "Question": "The aim of Malta’s SUP Strategy ‘Rethink Plastic’ is to                .",
+            "Option1": "Promote a more comfortable living",
+            "Option2": "Reduce consumption of single use plastic",
+            "Option3": "Encouraging the sales of local products",
+            "RightAnswer": "2"
+        },
+        {
+            "ID": "31",
+            "Question": "Which of the following are protected marine species?",
+            "Option1": "White Spotted Octopus",
+            "Option2": "Loggerhead turtle",
+            "Option3": "Dolphinfish ",
+            "RightAnswer": "2"
+        },
+        {
+            "ID": "32",
+            "Question": "Which one of the following have a spiky outer shell?",
+            "Option1": "Sea urchins",
+            "Option2": "Mauve stinger",
+            "Option3": "All of the above",
+            "RightAnswer": "1"
+        },
+        {
+            "ID": "33",
+            "Question": "Which of the following protected species are fauna?",
+            "Option1": "Maltese top-shell",
+            "Option2": "Neptune seagrass",
+            "Option3": "None of the above",
+            "RightAnswer": "1"
+        },
+        {
+            "ID": "34",
+            "Question": "What is a group of dolphins called?",
+            "Option1": "A pod",
+            "Option2": "A litter",
+            "Option3": "A school",
+            "RightAnswer": "1"
+        },
+        {
+            "ID": "35",
+            "Question": "Where is the largest estimated breeding colony for Mediterranean storm-petrels found?",
+            "Option1": "Sicily",
+            "Option2": "The Balearic islands, Spain",
+            "Option3": "Filfla, Malta",
+            "RightAnswer": "3"
+        }
+    ]
 }
